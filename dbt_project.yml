@@ -5,6 +5,7 @@ config-version: 2
 require-dbt-version: [">=1.3.0", "<2.0.0"]
 vars:
   hubspot:
+    hubspot_database: hubspot_deals
     contact: "{{ ref('stg_hubspot__contact') }}"
     contact_merge_audit: "{{ ref('stg_hubspot__contact_merge_audit') }}"
     contact_list: "{{ ref('stg_hubspot__contact_list') }}"
